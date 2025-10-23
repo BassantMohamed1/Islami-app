@@ -18,7 +18,7 @@ class SuraCard extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              Image.asset("assets/images/img_sur_number_frame.png", width: 56),
+              Image.asset("assets/images/img_sur_number_frame.png", width: 64),
               Text(
                 sura.suraNumber.toString(),
                 style: TextStyles.largeBody(textColor: AppColors.white),
