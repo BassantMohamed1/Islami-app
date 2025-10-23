@@ -70,6 +70,16 @@ class QuranTab extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: Text(
+                      "Most Recent",
+                      style: TextStyles.smallLabel(
+                        textColor: AppColors.offWhite,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: Text(
                       "Suras List",
                       style: TextStyles.smallLabel(
                         textColor: AppColors.offWhite,
