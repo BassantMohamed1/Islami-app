@@ -76,6 +76,5 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     }
     content = suraContent;
     setState(() {});
-    print(content);
   }
 }
