@@ -21,36 +21,48 @@ class HadethCard extends StatelessWidget {
           color: AppColors.gold,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              Stack(
-                alignment: Alignment.center,
+        child: Stack(
+          children: [
+            Align(
+              alignment: Alignment.center,
+                child: Image.asset("assets/images/HadithCardBackGround.png")),
+            Align(
+                alignment: Alignment.bottomCenter,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
+                    child: Image.asset("assets/images/Mosque-02.png"))),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Stack(
+                    alignment: Alignment.center,
                     children: [
-                      Image.asset("assets/images/left_corner.png"),
-                      Image.asset("assets/images/right_corner.png"),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset("assets/images/left_corner.png"),
+                          Image.asset("assets/images/right_corner.png"),
+                        ],
+                      ),
+                      Text(
+                        hadeth.title,
+                        style: TextStyles.mediumLabel(textColor: AppColors.black),
+                      ),
                     ],
                   ),
                   Text(
-                    hadeth.title,
-                    style: TextStyles.mediumLabel(textColor: AppColors.black),
+                    hadeth.content,
+                    style: TextStyles.largeBody(textColor: AppColors.black),
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    softWrap: true,
+                    maxLines: 19,
                   ),
                 ],
               ),
-              Text(
-                hadeth.content,
-                style: TextStyles.largeBody(textColor: AppColors.black),
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                softWrap: true,
-                maxLines: 21,
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
