@@ -35,6 +35,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Expanded(
               child: PageView.builder(
                 controller: controller,
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: OnboardingDM.onboardingList.length,
                 onPageChanged: (index) {
                   setState(() => i = index);
