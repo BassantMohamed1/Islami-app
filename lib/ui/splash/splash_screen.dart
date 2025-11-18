@@ -4,6 +4,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:islami/core/styles/app_colors.dart';
 import 'package:islami/ui/home/home_screen.dart';
+import 'package:islami/ui/onboarding_screen/onboarding_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String routeName = "splashScreen";
@@ -15,11 +17,18 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  bool? firstTime;
+
   @override
   void initState() {
     super.initState();
+    checkFirstTime();
     Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+      if (firstTime == null) {
+        Navigator.pushReplacementNamed(context, OnboardingScreen.routeName);
+      } else if (firstTime == false) {
+        Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+      }
     });
   }
 
@@ -50,5 +59,10 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> checkFirstTime() async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    firstTime = sharedPreferences.getBool("firstTime");
   }
 }
