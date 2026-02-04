@@ -65,14 +65,14 @@ The app focuses on **simplicity, usability, and saving user history locally** us
 ### 🔹 Onboarding
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_222327.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222416.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222451.png" width="300" />
+  <img src="assets/screenshots/Screenshot_20260204_222327.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222416.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222451.png" width="200" />
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_222503.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222511.png" width="300" />
+  <img src="assets/screenshots/Screenshot_20260204_222503.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222511.png" width="200" />
 </p>
 
 ---
@@ -80,9 +80,9 @@ The app focuses on **simplicity, usability, and saving user history locally** us
 ### 🔹 Quran
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_222734.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222723.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222647.png" width="300" />
+  <img src="assets/screenshots/Screenshot_20260204_222734.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222723.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222647.png" width="200" />
 </p>
 
 ---
@@ -90,8 +90,8 @@ The app focuses on **simplicity, usability, and saving user history locally** us
 ### 🔹 Hadith
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_222743.png" width="300" />
-  <img src="assets/screenshots/Screenshot_20260204_222813.png" width="300" />
+  <img src="assets/screenshots/Screenshot_20260204_222743.png" width="200" />
+  <img src="assets/screenshots/Screenshot_20260204_222813.png" width="200" />
 </p>
 
 ---
@@ -99,19 +99,23 @@ The app focuses on **simplicity, usability, and saving user history locally** us
 ### 🔹 Tasbih
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_222751.png" width="300" />
+  <img src="assets/screenshots/Screenshot_20260204_222751.png" width="200" />
 </p>
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-   ```bash
-    git clone https://github.com/BassantMohamed1/Islami-app.git
-    cd Islami-app
-    flutter pub get
-    flutter run
-```
----
+1. Clone the repository:
+   git clone https://github.com/BassantMohamed1/Islami-app.git
+
+2. Go to the project folder:
+   cd Islami-app
+
+3. Install dependencies:
+   flutter pub get
+
+4. Run the app:
+   flutter run
+
 <p align="center">Made with ❤️ using Flutter</p>
