@@ -57,7 +57,7 @@ The app focuses on **simplicity, usability, and saving user history locally** us
 ### 🔹 Splash Screen
 
 <p align="center">
-  <img src="assets/screenshots/Screenshot_20260204_223039.png" />
+  <img src="assets/screenshots/Screenshot_20260204_223039.png" width="200" />
 </p>
 
 ---
